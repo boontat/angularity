@@ -22,7 +22,7 @@ Run `npm install -g angular-cli-ghpages`
 
 Run `ng build --prod --base-href=/angularity/`. 
 
-Then run `ngh --dir dist/angularity` to push to gh-pages branch. View it [Here](https://boontat.github.io/angularity/angularity/)
+Then run `ngh --dir dist/angularity` to push to gh-pages branch. View it [Here](https://boontat.github.io/angularity/)
 
 ## Running unit tests
 
