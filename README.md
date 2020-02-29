@@ -1,4 +1,4 @@
-# Angularity
+# Angularity (WIP)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.3.
 
@@ -20,7 +20,9 @@ Run `npm install -g angular-cli-ghpages`
 
 ## Build & Publish to Github Pages
 
-Run `ng build --prod --base-href=/angularity/`. Then run `ngh --dir dist/angularity` to push to gh-pages branch. View it [Here](https://boontat.github.io/angularity/angularity/)
+Run `ng build --prod --base-href=/angularity/`. 
+
+Then run `ngh --dir dist/angularity` to push to gh-pages branch. View it [Here](https://boontat.github.io/angularity/angularity/)
 
 ## Running unit tests
 
