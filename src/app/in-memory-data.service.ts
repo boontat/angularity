@@ -8,16 +8,16 @@ import { Injectable } from '@angular/core';
 export class InMemoryDataService implements InMemoryDbService {
   createDb() {
     const heroes = [
-      { id: 11, name: 'Dr Nice' },
-      { id: 12, name: 'Narco' },
-      { id: 13, name: 'Bombasto' },
-      { id: 14, name: 'Celeritas' },
-      { id: 15, name: 'Magneta' },
-      { id: 16, name: 'RubberMan' },
-      { id: 17, name: 'Dynama' },
-      { id: 18, name: 'Dr IQ' },
-      { id: 19, name: 'Magma' },
-      { id: 20, name: 'Tornado' }
+      { id: 11, name: 'Dr Nice', avatar: '?accessoriesType=Prescription02&avatarStyle=Circle&clotheColor=PastelYellow&clotheType=Hoodie&eyeType=Dizzy&eyebrowType=DefaultNatural&facialHairColor=Red&facialHairType=BeardMedium&graphicType=Bat&hairColor=Red&hatColor=Blue03&mouthType=Concerned&skinColor=DarkBrown&topType=Eyepatch' },
+      { id: 12, name: 'Narco', avatar: '?accessoriesType=Prescription02&avatarStyle=Circle&clotheColor=PastelYellow&clotheType=Hoodie&eyeType=Dizzy&eyebrowType=DefaultNatural&facialHairColor=Red&facialHairType=BeardMedium&graphicType=Bat&hairColor=Red&hatColor=Blue03&mouthType=Concerned&skinColor=DarkBrown&topType=LongHairBigHair' },
+      { id: 13, name: 'Bombasto', avatar: '?accessoriesType=Prescription02&avatarStyle=Circle&clotheColor=PastelYellow&clotheType=Hoodie&eyeType=Dizzy&eyebrowType=DefaultNatural&facialHairColor=Red&facialHairType=BeardMedium&graphicType=Bat&hairColor=Red&hatColor=Blue03&mouthType=Concerned&skinColor=DarkBrown&topType=Eyepatch' },
+      { id: 14, name: 'Celeritas', avatar: '?accessoriesType=Prescription02&avatarStyle=Circle&clotheColor=PastelYellow&clotheType=Hoodie&eyeType=Dizzy&eyebrowType=DefaultNatural&facialHairColor=Red&facialHairType=BeardMedium&graphicType=Bat&hairColor=Red&hatColor=Blue03&mouthType=Concerned&skinColor=DarkBrown&topType=Eyepatch' },
+      { id: 15, name: 'Magneta', avatar: '?accessoriesType=Prescription02&avatarStyle=Circle&clotheColor=PastelYellow&clotheType=Hoodie&eyeType=Dizzy&eyebrowType=DefaultNatural&facialHairColor=Red&facialHairType=BeardMedium&graphicType=Bat&hairColor=Red&hatColor=Blue03&mouthType=Concerned&skinColor=DarkBrown&topType=LongHairBigHair' },
+      { id: 16, name: 'RubberMan', avatar: '?accessoriesType=Prescription02&avatarStyle=Circle&clotheColor=PastelYellow&clotheType=Hoodie&eyeType=Dizzy&eyebrowType=DefaultNatural&facialHairColor=Red&facialHairType=BeardMedium&graphicType=Bat&hairColor=Red&hatColor=Blue03&mouthType=Concerned&skinColor=DarkBrown&topType=Eyepatch' },
+      { id: 17, name: 'Dynama', avatar: '?accessoriesType=Prescription02&avatarStyle=Circle&clotheColor=PastelYellow&clotheType=Hoodie&eyeType=Dizzy&eyebrowType=DefaultNatural&facialHairColor=Red&facialHairType=BeardMedium&graphicType=Bat&hairColor=Red&hatColor=Blue03&mouthType=Concerned&skinColor=DarkBrown&topType=LongHairBigHair' },
+      { id: 18, name: 'Dr IQ', avatar: '?accessoriesType=Prescription02&avatarStyle=Circle&clotheColor=PastelYellow&clotheType=Hoodie&eyeType=Dizzy&eyebrowType=DefaultNatural&facialHairColor=Red&facialHairType=BeardMedium&graphicType=Bat&hairColor=Red&hatColor=Blue03&mouthType=Concerned&skinColor=DarkBrown&topType=Eyepatch' },
+      { id: 19, name: 'Magma', avatar: '?accessoriesType=Prescription02&avatarStyle=Circle&clotheColor=PastelYellow&clotheType=Hoodie&eyeType=Dizzy&eyebrowType=DefaultNatural&facialHairColor=Red&facialHairType=BeardMedium&graphicType=Bat&hairColor=Red&hatColor=Blue03&mouthType=Concerned&skinColor=DarkBrown&topType=LongHairBigHair' },
+      { id: 20, name: 'Tornado', avatar: '?accessoriesType=Prescription02&avatarStyle=Circle&clotheColor=PastelYellow&clotheType=Hoodie&eyeType=Dizzy&eyebrowType=DefaultNatural&facialHairColor=Red&facialHairType=BeardMedium&graphicType=Bat&hairColor=Red&hatColor=Blue03&mouthType=Concerned&skinColor=DarkBrown&topType=Eyepatch' }
     ];
     return {heroes};
   }

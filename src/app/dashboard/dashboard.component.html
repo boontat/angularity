@@ -1,11 +1,18 @@
 <h3>Top Heroes</h3>
-<div class="grid grid-pad">
-  <a *ngFor="let hero of heroes" class="col-1-4"
-      routerLink="/detail/{{hero.id}}">
-    <div class="module hero">
-      <h4>{{hero.name}}</h4>
+
+<div class="ui-fluid">
+  <div class="ui-g">
+    <div class="ui-g-3" *ngFor="let hero of heroes">
+      <p-card  header="{{hero.name}}" styleClass="ui-card-shadow">
+        <p-header>
+            <img src="Card" src="https://avataaars.io/{{hero.avatar}}">
+        </p-header>
+        <p-footer>
+          <button routerLink="/detail/{{hero.id}}" pButton type="button" label="Open" style="margin-right: .25em"></button>
+        </p-footer>
+      </p-card>
     </div>
-  </a>
+  </div>
 </div>
 
 <app-hero-search></app-hero-search>
