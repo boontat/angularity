@@ -1,8 +1,13 @@
 <div *ngIf="messageService.messages.length">
 
   <h2>Messages</h2>
-  <button class="clear"
-          (click)="messageService.clear()">clear</button>
+  <button pButton type="button" label="Clear"
+          (click)="messageService.clear()"></button>
   <div *ngFor='let message of messageService.messages'> {{message}} </div>
+<!--
+  <p-messages [(value)]="msgs"></p-messages>
+
+  <button type="button" (click)="show()">Show</button>
+  <button type="button" (click)="clear()">Hide</button> -->
 
 </div>

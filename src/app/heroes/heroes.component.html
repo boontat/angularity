@@ -1,18 +1,28 @@
 <h2>My Heroes</h2>
 
-<div>
-  <label>Hero name:
-    <input #heroName type="text" pInputText />
-  </label>
-  <!-- (click) passes input value to add() and then clears the input -->
-  <button (click)="add(heroName.value); heroName.value=''" type="button" pButton label="Add"></button>
+<div class="ui-fluid">
+  <div class="ui-g">
+    <div class="ui-g-12 ui-md-4">
+      <div class="ui-inputgroup">
+          <input #heroName type="text" pInputText placeholder="Hero Name">
+          <button pButton type="button" label="Add" (click)="add(heroName.value); heroName.value=''"></button>
+      </div>
+    </div>
+  </div>
 </div>
 
-<ul class="heroes">
-  <li *ngFor="let hero of heroes">
-    <a routerLink="/detail/{{hero.id}}">
-      <!-- <span class="badge">{{hero.id}}</span> {{hero.name}} -->
-    </a>
-    <button class="delete" title="delete hero" type="button" icon="pi pi-times" pButton (click)="delete(hero)"></button>
-  </li>
-</ul>
+<div class="ui-fluid">
+  <div class="ui-g">
+    <div class="ui-g-3" *ngFor="let hero of heroes">
+      <p-card  header="{{hero.name}}" styleClass="ui-card-shadow">
+        <p-header>
+            <img src="Card" src="https://avataaars.io/{{hero.avatar}}">
+        </p-header>
+        <p-footer>
+          <button routerLink="/detail/{{hero.id}}" pButton type="button" label="Open" icon="pi pi-check" style="margin-right: .25em"></button>
+          <button title="delete hero" pButton type="button" label="Delete" icon="pi pi-times" (click)="delete(hero)" class="ui-button-secondary"></button>
+        </p-footer>
+      </p-card>
+    </div>
+  </div>
+</div>

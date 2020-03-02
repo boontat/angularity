@@ -23,6 +23,8 @@ import { CardModule } from 'primeng/card';
 import { ToolbarModule } from 'primeng/toolbar';
 import { SplitButtonModule } from 'primeng/splitbutton';
 import { HeaderComponent } from './header/header.component';
+import {MessagesModule} from 'primeng/messages';
+import {MessageModule} from 'primeng/message';
 
 @NgModule({
   imports: [
@@ -38,6 +40,8 @@ import { HeaderComponent } from './header/header.component';
     CardModule,
     ToolbarModule,
     SplitButtonModule,
+    MessagesModule,
+    MessageModule,
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.
     // Remove it when a real server is ready to receive requests.
